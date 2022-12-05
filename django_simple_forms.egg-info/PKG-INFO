@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: django-simple-forms
-Version: 0.1.1
+Version: 0.1.2
 Summary: A Django app for creating forms
 Home-page: https://github.com/jonathanrickard
 Author: Jonathan Rickard
@@ -94,6 +94,7 @@ Needing documentation
 * User permissions
 * Use of ``initial_boolean`` field in admin
 * Use of `XlsxWriter <https://github.com/jmcnamara/XlsxWriter/>`_ in spreadsheet generation
+* Explanation of admin customization options for response categories
 * Explanation of how to specify custom HTML and CSS files for most internal and external pages through the form definition admin
 * Explanation that ``email`` can not be used as a field name because it is already used as a hidden honeypot field
 * Explanation that default error messages are built in, and any entered in the admin are just for customization

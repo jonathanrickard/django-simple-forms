@@ -366,9 +366,9 @@ def form_page(request, pk, title_slug):
                 success_template,
                 context,
             )
-    ''' Begin setting when form was submitted '''
+    ''' Begin setting when form was loaded '''
     request.session['form_load_time'] = timezone.now().timestamp()
-    ''' End setting when form was submitted '''
+    ''' End setting when form was loaded '''
     context = {
         'title': form_instance.title,
         'descriptive_text': mark_safe(form_instance.descriptive_text),

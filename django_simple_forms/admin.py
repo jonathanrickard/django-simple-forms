@@ -39,6 +39,7 @@ from django.utils.safestring import (
 
 
 from adminsortable2.admin import (
+    SortableAdminBase,
     SortableInlineAdminMixin,
 )
 
@@ -232,7 +233,7 @@ class ChoiceDefinitionInline(SortableInlineAdminMixin, admin.TabularInline):
     extra = 0
 
 
-class InputDefinitionAdmin(CloneableAdmin):
+class InputDefinitionAdmin(SortableAdminBase, CloneableAdmin):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.readonly_fields = [
@@ -384,7 +385,7 @@ class TableFieldInline(SortableInlineAdminMixin, admin.TabularInline):
     extra = 0
 
 
-class FormDefinitionAdmin(CloneableAdmin):
+class FormDefinitionAdmin(SortableAdminBase, CloneableAdmin):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.obj = None

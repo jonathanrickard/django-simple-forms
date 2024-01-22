@@ -1,28 +1,33 @@
 Metadata-Version: 2.1
-Name: django-simple-forms
-Version: 0.1.7
+Name: django_simple_forms
+Version: 0.1.8
 Summary: A Django app for creating forms
 Home-page: https://github.com/jonathanrickard
 Author: Jonathan Rickard
 Author-email: jonathan@jonathanrickard.com
 License: MIT License
 Keywords: django,forms
-Platform: UNKNOWN
 Classifier: Environment :: Web Environment
 Classifier: Framework :: Django
-Classifier: Framework :: Django :: 4.1
 Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
 Classifier: Operating System :: OS Independent
 Classifier: Programming Language :: Python
 Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.8
 Classifier: Programming Language :: Python :: 3.9
 Classifier: Programming Language :: Python :: 3.10
 Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
 Classifier: Intended Audience :: Developers
 Classifier: Topic :: Internet :: WWW/HTTP
 Classifier: License :: OSI Approved :: MIT License
 License-File: LICENSE
+Requires-Dist: Django<=5.0,>=4.2
+Requires-Dist: django-admin-sortable2>=2.1.8
+Requires-Dist: django-ckeditor>=6.1
+Requires-Dist: django-simple-file-handler>=0.3.4
+Requires-Dist: requests>=2.28
+Requires-Dist: xlsxwriter>=3.0
 
 ===================
 django-simple-forms
@@ -110,5 +115,3 @@ Needing documentation
 * Explanation that, by default, ``output_formatted_date_time`` and ``output_text`` are used in the default templates, but ``output_dict`` and ``output_no_br`` are also available in most cases
 * Explanation that ``created`` and ``updated`` model instance data is also available in HTML and PDF templates
 * Explanation of the ``checkbox_select_multiple`` class being automatically added to the CheckboxSelectMultiple <ul> tag to make styling easier
-
-
